@@ -1,1 +1,10 @@
+function verDetalle(titulo, descripcion) {
+  document.getElementById('titulo').textContent = titulo;
+  document.getElementById('descripcion').textContent = descripcion;
+  document.getElementById('popup').style.display = 'block';
+}
+
+function cerrarPopup() {
+  document.getElementById('popup').style.display = 'none';
+}
 
