@@ -1,1 +1,32 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Medicina Veterinaria - UST</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Interactiva Medicina Veterinaria - UST</h1>
+  <div class="grid">
+    <div class="curso" onclick="verDetalle('Introducción a la Medicina Veterinaria y Una Salud', 'Semestre 1 - Base conceptual de la carrera y enfoque de Una Salud.')">Introducción</div>
+    <div class="curso" onclick="verDetalle('Anatomía de Animales Mayores', 'Semestre 1 - Morfología estructural de animales grandes.')">Anatomía Mayores</div>
+    <div class="curso" onclick="verDetalle('Microbiología', 'Semestre 2 - Microorganismos de importancia clínica y zoonótica.')">Microbiología</div>
+    <div class="curso" onclick="verDetalle('Farmacología', 'Semestre 5 - Farmacodinamia y farmacocinética aplicada.')">Farmacología</div>
+    <div class="curso" onclick="verDetalle('Cirugía y Anestesiología', 'Semestre 7 - Procedimientos quirúrgicos y protocolos anestésicos.')">Cirugía</div>
+    <div class="curso" onclick="verDetalle('Internado de Animales Mayores', 'Semestre 10 - Práctica profesional en campo clínico.')">Internado Mayores</div>
+    <div class="curso" onclick="verDetalle('Una Salud VI: Inocuidad Alimentaria', 'Semestre 8 - Seguridad en la cadena alimentaria.')">Una Salud VI</div>
+    <div class="curso" onclick="verDetalle('Electivo II', 'Asignatura electiva en modalidad no presencial.')">Electivo II</div>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span onclick="cerrarPopup()" class="cerrar">&times;</span>
+      <h2 id="titulo"></h2>
+      <p id="descripcion"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
